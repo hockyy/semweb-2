@@ -3,20 +3,45 @@
 @prefix hoc: <http://hocky.id/entity/> .
 @prefix rel: <http://hocky.id/rel#> .
 
+hoc:TA1920
+  rdfs:label "TA 2019/2020" ;
+  rdf:type hoc:TA ;
+  rel:memiliki hoc:TA1920T1, hoc:TA1920T2 .
+
+hoc:TA2021
+  rdfs:label "TA 2020/2021" ;
+  rdf:type hoc:TA ;
+  rel:memiliki hoc:TA2021T1 .
+
+hoc:TA1920T1
+  rdfs:label "TA 2019/2020 T1" ;
+  rdf:type hoc:TermAkademik .
+
+hoc:TA1920T2
+  rdfs:label "TA 2019/2020 T2" ;
+  rdf:type hoc:TermAkademik .
+
+hoc:TA2021T1
+  rdfs:label "TA 2020/2021 T1" ;
+  rdf:type hoc:TermAkademik .
+
 hoc:sem1
   rdfs:label "Semester 1" ;
-  rdf:type hoc:semester ;
-  rel:mengambil hoc:DDP1, hoc:FisDas, hoc:MD1 .
+  rdf:type hoc:Semester ;
+  rel:mengambil hoc:DDP1, hoc:FisDas, hoc:MD1 ;
+  rel:pada hoc:TA1920T1 .
 
 hoc:sem2
   rdfs:label "Semester 2" ;
-  rdf:type hoc:semester ;
-  rel:mengambil hoc:DDP2, hoc:MatDas1, hoc:MD2, hoc:CP, hoc:PSD .
+  rdf:type hoc:Semester ;
+  rel:mengambil hoc:DDP2, hoc:MatDas1, hoc:MD2, hoc:CP, hoc:PSD ;
+  rel:pada hoc:TA1920T2 .
 
 hoc:sem3
   rdfs:label "Semester 3" ;
-  rdf:type hoc:semester ;
-  rel:mengambil hoc:ALin, hoc:MatDas2, hoc:POK, hoc:PPW, hoc:StatProb, hoc:SDA .
+  rdf:type hoc:Semester ;
+  rel:mengambil hoc:ALin, hoc:MatDas2, hoc:POK, hoc:PPW, hoc:StatProb, hoc:SDA ;
+  rel:pada hoc:TA2021T1 .
 
 rel:done rdfs:label "Sudah Menempuh" .
 
