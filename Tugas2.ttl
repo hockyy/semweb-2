@@ -5,15 +5,18 @@
 
 hoc:sem1
   rdfs:label "Semester 1" ;
-  rdf:type hoc:semester .
+  rdf:type hoc:semester ;
+  rel:mengambil hoc:DDP1, hoc:FisDas, hoc:MD1 .
 
 hoc:sem2
   rdfs:label "Semester 2" ;
-  rdf:type hoc:semester .
+  rdf:type hoc:semester ;
+  rel:mengambil hoc:DDP2, hoc:MatDas1, hoc:MD2, hoc:CP, hoc:PSD .
 
 hoc:sem3
   rdfs:label "Semester 3" ;
-  rdf:type hoc:semester .
+  rdf:type hoc:semester ;
+  rel:mengambil hoc:ALin, hoc:MatDas2, hoc:POK, hoc:PPW, hoc:StatProb, hoc:SDA .
 
 rel:done rdfs:label "Sudah Menempuh" .
 
@@ -174,14 +177,12 @@ hoc:MD1G
 hoc:DDP2E
   rdfs:label "DDP 2 - E" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuNilam ;
-  rel:dibimbing hoc:BuEvi .
+  rel:dibimbing hoc:BuNilam, hoc:BuEvi .
 
 hoc:MatDas1A
   rdfs:label "MatDas 1 - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuRina ;
-  rel:dibimbing hoc:PakChan .
+  rel:dibimbing hoc:BuRina, hoc:PakChan .
 
 hoc:MD2E
   rdfs:label "MD 2 - E" ;
@@ -206,8 +207,7 @@ hoc:ALinC
 hoc:MatDas2A
   rdfs:label "MatDas 2 - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakHeru ;
-  rel:dibimbing hoc:BuRina .
+  rel:dibimbing hoc:PakHeru, hoc:BuRina .
 
 hoc:POKC
   rdfs:label "POK - C" ;
