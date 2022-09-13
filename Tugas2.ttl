@@ -9,6 +9,7 @@
 @prefix rel: <http://hocky.id/rel#> .
 @prefix matkul: <https://academic.ui.ac.id/main/Course/Detail/> .
 @prefix kelas: <https://academic.ui.ac.id/main/Academic/Detail/> .
+@prefix dosen: <https://cs.ui.ac.id/personnel/> .
 
 hoc:TA1920
   rdfs:label "TA 2019/2020" ;
@@ -73,63 +74,63 @@ hoc:hocky
 
 # Start of Dosen
 
-hoc:PakAri
+dosen:ari-saptawijaya
   rdfs:label "Ari Saptawijaya S.Kom., M.Sc., Ph.D." ;
   rdf:type hoc:Dosen .
 
-hoc:BuArlisa
+dosen:arlisa-yuliawati
   rdfs:label "Arlisa Yuliawati, S.Kom., M.Kom." ;
   rdf:type hoc:Dosen .
 
-hoc:PakDenny
+dosen:denny
   rdfs:label "Denny S.Kom., M.I.T., Ph.D." ;
   rdf:type hoc:Dosen .
 
-hoc:BuKasiyah
+dosen:kasiyah
   rdfs:label "Dr. Dra. Kasiyah M.Sc." ;
   rdf:type hoc:Dosen .
 
-hoc:BuEfi
+dosen:erdefi-rakun
   rdfs:label "Dr. Ir. Erdefi Rakun M.Sc." ;
   rdf:type hoc:Dosen .
 
-hoc:PakStef
+dosen:lim-yohanes-stefanus
   rdfs:label "Drs. Lim Yohanes Stefanus M.Math., Ph.D." ;
   rdf:type hoc:Dosen .
 
-hoc:BuEvi
+dosen:evi-yulianti
   rdfs:label "Evi Yulianti M.Comp.Sc., Ph.D." ;
   rdf:type hoc:Dosen .
 
-hoc:PakAdin
+dosen:gladhi-guarddin
   rdfs:label "Gladhi Guarddin, S.Kom., M.Kom." ;
   rdf:type hoc:Dosen .
 
-hoc:BuIis
+dosen:iis-afriyanti
   rdfs:label "Iis Afriyanti, S.Kom., M.Sc." ;
   rdf:type hoc:Dosen .
 
-hoc:PakAdhi
+dosen:adhi-yuniarto-laurentius-yohanes
   rdfs:label "Ir. Adhi Yuniarto Laurentius Yohannes M.Kom." ;
   rdf:type hoc:Dosen .
 
-hoc:BuMei
+dosen:mei-silviana-saputri
   rdfs:label "Mei Silviana Saputri, S.Kom., M.Kom." ;
   rdf:type hoc:Dosen .
 
-hoc:BuNilam
+hoc:nilam-fitriah
   rdfs:label "Nilam Fitriah, M.Si." ;
   rdf:type hoc:Dosen .
 
-hoc:BuRina
+dosen:noverina-alfiany
   rdfs:label "Noverina Alfiany, M.Si." ;
   rdf:type hoc:Dosen .
 
-hoc:PakChan
+dosen:t-basaruddin-eng
   rdfs:label "Prof. Drs. T. Basaruddin M.Sc., Ph.D." ;
   rdf:type hoc:Dosen .
 
-hoc:PakHeru
+dosen:heru-suhartanto
   rdfs:label "Prof. Heru Suhartanto M.Sc., Ph.D." ;
   rdf:type hoc:Dosen .
 
@@ -216,69 +217,69 @@ matkul:CSGE602040
 kelas:607788
   rdfs:label "DDP 1 - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakStef .
+  rel:dibimbing dosen:lim-yohanes-stefanus .
 
 kelas:611383
   rdfs:label "FisDas - G" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakStef .
+  rel:dibimbing dosen:lim-yohanes-stefanus .
 
 kelas:608186
   rdfs:label "MD 1 - G" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakAri .
+  rel:dibimbing dosen:ari-saptawijaya .
 
 kelas:620016
   rdfs:label "DDP 2 - E" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuNilam, hoc:BuEvi .
+  rel:dibimbing dosen:nilam-fitriah, dosen:evi-yulianti .
 
 kelas:620077
   rdfs:label "MatDas 1 - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuRina, hoc:PakChan .
+  rel:dibimbing dosen:noverina-alfiany, dosen:t-basaruddin-eng .
 
 kelas:620137
   rdfs:label "MD 2 - E" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuArlisa .
+  rel:dibimbing dosen:arlisa-yuliawati .
 
 kelas:620289
   rdfs:label "CP" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakDenny .
+  rel:dibimbing dosen:denny .
 
 kelas:620207
   rdfs:label "PSD - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuEfi .
+  rel:dibimbing dosen:erdefi-rakun .
 
 kelas:632538
   rdfs:label "Alin - C" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuKasiyah .
+  rel:dibimbing dosen:kasiyah .
 
 kelas:632608
   rdfs:label "MatDas 2 - A" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakHeru, hoc:BuRina .
+  rel:dibimbing dosen:heru-suhartanto, dosen:noverina-alfiany .
 
 kelas:632591
   rdfs:label "POK - C" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakAdhi .
+  rel:dibimbing dosen:adhi-yuniarto-laurentius-yohanes .
 
 kelas:632570
   rdfs:label "PPW - B" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakAdin .
+  rel:dibimbing dosen:gladhi-guarddin .
 
 kelas:640199
   rdfs:label "Statprob - K" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:PakStef .
+  rel:dibimbing dosen:lim-yohanes-stefanus .
 
 kelas:632625
   rdfs:label "SDA - E" ;
   rdf:type hoc:Kelas ;
-  rel:dibimbing hoc:BuMei .
+  rel:dibimbing dosen:mei-silviana-saputri .
