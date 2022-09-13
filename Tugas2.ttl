@@ -1,3 +1,8 @@
+# Nama: Hocky Yudhiono
+# NPM: 1906285604
+# Kelas: Jejaring Semantik 2022/2023 Genap
+# Worksheet 2
+
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix hoc: <http://hocky.id/entity/> .
@@ -5,12 +10,12 @@
 
 hoc:TA1920
   rdfs:label "TA 2019/2020" ;
-  rdf:type hoc:TA ;
+  rdf:type hoc:TahunAkademik ;
   rel:memiliki hoc:TA1920T1, hoc:TA1920T2 .
 
 hoc:TA2021
   rdfs:label "TA 2020/2021" ;
-  rdf:type hoc:TA ;
+  rdf:type hoc:TahunAkademik ;
   rel:memiliki hoc:TA2021T1 .
 
 hoc:TA1920T1
