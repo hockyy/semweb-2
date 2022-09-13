@@ -7,6 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix hoc: <http://hocky.id/entity/> .
 @prefix rel: <http://hocky.id/rel#> .
+@prefix matkul: <https://academic.ui.ac.id/main/Course/Detail/> .
 
 hoc:TA1920
   rdfs:label "TA 2019/2020" ;
@@ -33,19 +34,33 @@ hoc:TA2021T1
 hoc:sem1
   rdfs:label "Semester 1" ;
   rdf:type hoc:Semester ;
-  rel:mengambil hoc:DDP1, hoc:FisDas, hoc:MD1 ;
+  rel:mengambil
+    matkul:CSGE601020,
+    matkul:UIST601111,
+    matkul:CSGE601010 ;
   rel:pada hoc:TA1920T1 .
 
 hoc:sem2
   rdfs:label "Semester 2" ;
   rdf:type hoc:Semester ;
-  rel:mengambil hoc:DDP2, hoc:MatDas1, hoc:MD2, hoc:CP, hoc:PSD ;
+  rel:mengambil
+    matkul:CSGE601021,
+    matkul:UIST601014,
+    matkul:CSGE601011,
+    matkul:CSCE604226,
+    matkul:CSCM601150 ;
   rel:pada hoc:TA1920T2 .
 
 hoc:sem3
   rdfs:label "Semester 3" ;
   rdf:type hoc:Semester ;
-  rel:mengambil hoc:ALin, hoc:MatDas2, hoc:POK, hoc:PPW, hoc:StatProb, hoc:SDA ;
+  rel:mengambil
+    matkul:CSGE602012,
+    matkul:CSCM602115,
+    matkul:CSCM601252,
+    matkul:CSGE602022,
+    matkul:CSGE602013,
+    matkul:CSGE602040 ;
   rel:pada hoc:TA2021T1 .
 
 rel:done rdfs:label "Sudah Menempuh" .
@@ -118,83 +133,83 @@ hoc:PakHeru
   rdf:type hoc:Dosen .
 
 # Start of MataKuliah
-hoc:DDP1
+matkul:CSGE601020
   rdfs:label "Dasar-Dasar Pemrograman 1" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:DDP1A .
 
-hoc:FisDas
+matkul:UIST601111
   rdfs:label "Fisika Dasar" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:FisDasG .
 
-hoc:MD1
+matkul:CSGE601010
   rdfs:label "Matematika Diskret 1" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:MD1G .
 
-hoc:DDP2
+matkul:CSGE601021
   rdfs:label "Dasar-dasar Pemrograman 2" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:DDP2E ;
-  rel:membutuhkan hoc:DDP1 .
+  rel:membutuhkan matkul:CSGE601020 .
 
-hoc:MatDas1
+matkul:UIST601014
   rdfs:label "Matematika Dasar 1" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:MatDas1A .
 
-hoc:MD2
+matkul:CSGE601011
   rdfs:label "Matematika Diskret 2" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:MD2E .
 
-hoc:CP
+matkul:CSCE604226
   rdfs:label "Pemrograman Kompetitif" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:CPO ;
-  rel:membutuhkan hoc:SDA .
+  rel:membutuhkan matkul:CSGE602040 .
 
-hoc:PSD
+matkul:CSCM601150
   rdfs:label "Pengantar Sistem Dijital" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:PSDA .
 
-hoc:ALin
+matkul:CSGE602012
   rdfs:label "Aljabar Linier" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:ALinC ;
-  rel:membutuhkan hoc:MD1 .
+  rel:membutuhkan matkul:CSGE601010 .
 
-hoc:MatDas2
+matkul:CSCM602115
   rdfs:label "Matematika Dasar 2" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:MatDas2A ;
-  rel:membutuhkan hoc:MatDas1 .
+  rel:membutuhkan matkul:UIST601014 .
 
-hoc:POK
+matkul:CSCM601252
   rdfs:label "Pengantar Organisasi Komputer" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:POKC ;
-  rel:membutuhkan hoc:PSD .
+  rel:membutuhkan matkul:CSCM601150 .
 
-hoc:PPW
+matkul:CSGE602022
   rdfs:label "Perancangan & Pemrograman Web" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:PPWB ;
-  rel:membutuhkan hoc:DDP1 .
+  rel:membutuhkan matkul:CSGE601020 .
 
-hoc:StatProb
+matkul:CSGE602013
   rdfs:label "Statistika & Probabilitas" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:StatProbK ;
-  rel:membutuhkan hoc:MatDas1, hoc:MD1 .
+  rel:membutuhkan matkul:UIST601014, matkul:CSGE601010 .
 
-hoc:SDA
+matkul:CSGE602040
   rdfs:label "Struktur Data & Algoritma" ;
   rdf:type hoc:MataKuliah ;
   rel:mengambil hoc:SDAE ;
-  rel:membutuhkan hoc:DDP2 .
+  rel:membutuhkan matkul:CSGE601021 .
 
 # Start of Kelas
 hoc:DDP1A
