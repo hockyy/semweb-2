@@ -1,0 +1,230 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hoc: <http://hocky.id/entity/> .
+@prefix rel: <http://hocky.id/rel#> .
+
+hoc:sem1
+  rdfs:label "Semester 1" ;
+  rdf:type hoc:semester .
+
+hoc:sem2
+  rdfs:label "Semester 2" ;
+  rdf:type hoc:semester .
+
+hoc:sem3
+  rdfs:label "Semester 3" ;
+  rdf:type hoc:semester .
+
+rel:done rdfs:label "Sudah Menempuh" .
+
+hoc:hocky
+  rdfs:label "Hocky Yudhiono" ;
+  rdf:type hoc:Mahasiswa ;
+  rel:done hoc:sem1, hoc:sem2, hoc:sem3 .
+
+# Start of Dosen
+
+hoc:PakAri
+  rdfs:label "Ari Saptawijaya S.Kom., M.Sc., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuArlisa
+  rdfs:label "Arlisa Yuliawati, S.Kom., M.Kom." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakDenny
+  rdfs:label "Denny S.Kom., M.I.T., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuKasiyah
+  rdfs:label "Dr. Dra. Kasiyah M.Sc." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuEfi
+  rdfs:label "Dr. Ir. Erdefi Rakun M.Sc." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakStef
+  rdfs:label "Drs. Lim Yohanes Stefanus M.Math., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuEvi
+  rdfs:label "Evi Yulianti M.Comp.Sc., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakAdin
+  rdfs:label "Gladhi Guarddin, S.Kom., M.Kom." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuIis
+  rdfs:label "Iis Afriyanti, S.Kom., M.Sc." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakAdhi
+  rdfs:label "Ir. Adhi Yuniarto Laurentius Yohannes M.Kom." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuMei
+  rdfs:label "Mei Silviana Saputri, S.Kom., M.Kom." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuNilam
+  rdfs:label "Nilam Fitriah, M.Si." ;
+  rdf:type hoc:Dosen .
+
+hoc:BuRina
+  rdfs:label "Noverina Alfiany, M.Si." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakChan
+  rdfs:label "Prof. Drs. T. Basaruddin M.Sc., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+hoc:PakHeru
+  rdfs:label "Prof. Heru Suhartanto M.Sc., Ph.D." ;
+  rdf:type hoc:Dosen .
+
+# Start of MataKuliah
+hoc:DDP1
+  rdfs:label "Dasar-Dasar Pemrograman 1" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:DDP1A .
+
+hoc:FisDas
+  rdfs:label "Fisika Dasar" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:FisDasG .
+
+hoc:MD1
+  rdfs:label "Matematika Diskret 1" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:MD1G .
+
+hoc:DDP2
+  rdfs:label "Dasar-dasar Pemrograman 2" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:DDP2E .
+
+hoc:MatDas1
+  rdfs:label "Matematika Dasar 1" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:MatDas1A .
+
+hoc:MD2
+  rdfs:label "Matematika Diskret 2" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:MD2E .
+
+hoc:CP
+  rdfs:label "Pemrograman Kompetitif" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:CPO .
+
+hoc:PSD
+  rdfs:label "Pengantar Sistem Dijital" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:PSDA .
+
+hoc:ALin
+  rdfs:label "Aljabar Linier" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:ALinC .
+
+hoc:MatDas2
+  rdfs:label "Matematika Dasar 2" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:MatDas2A .
+
+hoc:POK
+  rdfs:label "Pengantar Organisasi Komputer" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:POKC .
+
+hoc:PPW
+  rdfs:label "Perancangan & Pemrograman Web" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:PPWB .
+
+hoc:StatProb
+  rdfs:label "Statistika & Probabilitas" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:StatProbK .
+
+hoc:SDA
+  rdfs:label "Struktur Data & Algoritma" ;
+  rdf:type hoc:MataKuliah ;
+  rel:mengambil hoc:SDAE .
+
+# Start of Kelas
+hoc:DDP1A
+  rdfs:label "DDP 1 - A" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakStef .
+
+hoc:FisDasG
+  rdfs:label "FisDas - G" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakStef .
+
+hoc:MD1G
+  rdfs:label "MD 1 - G" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakAri .
+
+hoc:DDP2E
+  rdfs:label "DDP 2 - E" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuNilam ;
+  rel:dibimbing hoc:BuEvi .
+
+hoc:MatDas1A
+  rdfs:label "MatDas 1 - A" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuRina ;
+  rel:dibimbing hoc:PakChan .
+
+hoc:MD2E
+  rdfs:label "MD 2 - E" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuArlisa .
+
+hoc:CPO
+  rdfs:label "CP" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakDenny .
+
+hoc:PSDA
+  rdfs:label "PSD - A" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuEfi .
+
+hoc:ALinC
+  rdfs:label "Alin - C" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuKasiyah .
+
+hoc:MatDas2A
+  rdfs:label "MatDas 2 - A" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakHeru ;
+  rel:dibimbing hoc:BuRina .
+
+hoc:POKC
+  rdfs:label "POK - C" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakAdhi .
+
+hoc:PPWB
+  rdfs:label "PPW - B" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakAdin .
+
+hoc:StatProbK
+  rdfs:label "Statprob - K" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:PakStef .
+
+hoc:SDAE
+  rdfs:label "SDA - E" ;
+  rdf:type hoc:Kelas ;
+  rel:dibimbing hoc:BuMei .
