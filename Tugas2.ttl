@@ -106,7 +106,8 @@ hoc:MD1
 hoc:DDP2
   rdfs:label "Dasar-dasar Pemrograman 2" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:DDP2E .
+  rel:mengambil hoc:DDP2E ;
+  rel:membutuhkan hoc:DDP1 .
 
 hoc:MatDas1
   rdfs:label "Matematika Dasar 1" ;
@@ -121,7 +122,8 @@ hoc:MD2
 hoc:CP
   rdfs:label "Pemrograman Kompetitif" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:CPO .
+  rel:mengambil hoc:CPO ;
+  rel:membutuhkan hoc:SDA .
 
 hoc:PSD
   rdfs:label "Pengantar Sistem Dijital" ;
@@ -131,32 +133,38 @@ hoc:PSD
 hoc:ALin
   rdfs:label "Aljabar Linier" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:ALinC .
+  rel:mengambil hoc:ALinC ;
+  rel:membutuhkan hoc:MD1 .
 
 hoc:MatDas2
   rdfs:label "Matematika Dasar 2" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:MatDas2A .
+  rel:mengambil hoc:MatDas2A ;
+  rel:membutuhkan hoc:MatDas1 .
 
 hoc:POK
   rdfs:label "Pengantar Organisasi Komputer" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:POKC .
+  rel:mengambil hoc:POKC ;
+  rel:membutuhkan hoc:PSD .
 
 hoc:PPW
   rdfs:label "Perancangan & Pemrograman Web" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:PPWB .
+  rel:mengambil hoc:PPWB ;
+  rel:membutuhkan hoc:DDP1 .
 
 hoc:StatProb
   rdfs:label "Statistika & Probabilitas" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:StatProbK .
+  rel:mengambil hoc:StatProbK ;
+  rel:membutuhkan hoc:MatDas1, hoc:MD1 .
 
 hoc:SDA
   rdfs:label "Struktur Data & Algoritma" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:SDAE .
+  rel:mengambil hoc:SDAE ;
+  rel:membutuhkan hoc:DDP2 .
 
 # Start of Kelas
 hoc:DDP1A
