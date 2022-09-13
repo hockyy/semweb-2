@@ -8,6 +8,7 @@
 @prefix hoc: <http://hocky.id/entity/> .
 @prefix rel: <http://hocky.id/rel#> .
 @prefix matkul: <https://academic.ui.ac.id/main/Course/Detail/> .
+@prefix kelas: <https://academic.ui.ac.id/main/Academic/Detail/> .
 
 hoc:TA1920
   rdfs:label "TA 2019/2020" ;
@@ -136,148 +137,148 @@ hoc:PakHeru
 matkul:CSGE601020
   rdfs:label "Dasar-Dasar Pemrograman 1" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:DDP1A .
+  rel:mengambil kelas:607788 .
 
 matkul:UIST601111
   rdfs:label "Fisika Dasar" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:FisDasG .
+  rel:mengambil kelas:611383 .
 
 matkul:CSGE601010
   rdfs:label "Matematika Diskret 1" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:MD1G .
+  rel:mengambil kelas:608186 .
 
 matkul:CSGE601021
   rdfs:label "Dasar-dasar Pemrograman 2" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:DDP2E ;
+  rel:mengambil kelas:620016 ;
   rel:membutuhkan matkul:CSGE601020 .
 
 matkul:UIST601014
   rdfs:label "Matematika Dasar 1" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:MatDas1A .
+  rel:mengambil kelas:620077 .
 
 matkul:CSGE601011
   rdfs:label "Matematika Diskret 2" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:MD2E .
+  rel:mengambil kelas:620137 .
 
 matkul:CSCE604226
   rdfs:label "Pemrograman Kompetitif" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:CPO ;
+  rel:mengambil kelas:620289 ;
   rel:membutuhkan matkul:CSGE602040 .
 
 matkul:CSCM601150
   rdfs:label "Pengantar Sistem Dijital" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:PSDA .
+  rel:mengambil kelas:620207 .
 
 matkul:CSGE602012
   rdfs:label "Aljabar Linier" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:ALinC ;
+  rel:mengambil kelas:632538 ;
   rel:membutuhkan matkul:CSGE601010 .
 
 matkul:CSCM602115
   rdfs:label "Matematika Dasar 2" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:MatDas2A ;
+  rel:mengambil kelas:632608 ;
   rel:membutuhkan matkul:UIST601014 .
 
 matkul:CSCM601252
   rdfs:label "Pengantar Organisasi Komputer" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:POKC ;
+  rel:mengambil kelas:632591 ;
   rel:membutuhkan matkul:CSCM601150 .
 
 matkul:CSGE602022
   rdfs:label "Perancangan & Pemrograman Web" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:PPWB ;
+  rel:mengambil kelas:632570 ;
   rel:membutuhkan matkul:CSGE601020 .
 
 matkul:CSGE602013
   rdfs:label "Statistika & Probabilitas" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:StatProbK ;
+  rel:mengambil kelas:640199 ;
   rel:membutuhkan matkul:UIST601014, matkul:CSGE601010 .
 
 matkul:CSGE602040
   rdfs:label "Struktur Data & Algoritma" ;
   rdf:type hoc:MataKuliah ;
-  rel:mengambil hoc:SDAE ;
+  rel:mengambil kelas:632625 ;
   rel:membutuhkan matkul:CSGE601021 .
 
 # Start of Kelas
-hoc:DDP1A
+kelas:607788
   rdfs:label "DDP 1 - A" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakStef .
 
-hoc:FisDasG
+kelas:611383
   rdfs:label "FisDas - G" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakStef .
 
-hoc:MD1G
+kelas:608186
   rdfs:label "MD 1 - G" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakAri .
 
-hoc:DDP2E
+kelas:620016
   rdfs:label "DDP 2 - E" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuNilam, hoc:BuEvi .
 
-hoc:MatDas1A
+kelas:620077
   rdfs:label "MatDas 1 - A" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuRina, hoc:PakChan .
 
-hoc:MD2E
+kelas:620137
   rdfs:label "MD 2 - E" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuArlisa .
 
-hoc:CPO
+kelas:620289
   rdfs:label "CP" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakDenny .
 
-hoc:PSDA
+kelas:620207
   rdfs:label "PSD - A" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuEfi .
 
-hoc:ALinC
+kelas:632538
   rdfs:label "Alin - C" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuKasiyah .
 
-hoc:MatDas2A
+kelas:632608
   rdfs:label "MatDas 2 - A" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakHeru, hoc:BuRina .
 
-hoc:POKC
+kelas:632591
   rdfs:label "POK - C" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakAdhi .
 
-hoc:PPWB
+kelas:632570
   rdfs:label "PPW - B" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakAdin .
 
-hoc:StatProbK
+kelas:640199
   rdfs:label "Statprob - K" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:PakStef .
 
-hoc:SDAE
+kelas:632625
   rdfs:label "SDA - E" ;
   rdf:type hoc:Kelas ;
   rel:dibimbing hoc:BuMei .
